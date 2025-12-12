@@ -1,5 +1,6 @@
 'use client';
 
+import Footer from '@/components/shared/footer';
 import Header from '@/components/shared/header';
 import InitLoadingProvider from '@/providers/init-loading-provider';
 import { ReactNode } from 'react';
@@ -9,6 +10,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
         <InitLoadingProvider>
             <Header />
             {children}
+            <Footer />
         </InitLoadingProvider>
     );
 }
